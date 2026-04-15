@@ -1,95 +1,111 @@
-# 多功能文件工具箱 - 使用说明
+# 多功能文件工具箱（FileBox）
 
-这个项目是一个本地可运行的文件工具箱，包含：
+一个基于 Next.js + Electron 的本地文件处理工具箱，聚焦常用高频场景：图片压缩、压缩包解压与打包。
 
-- 图片压缩
-- 在线解压（ZIP / RAR / 7z）
-- 在线压缩包（文件/文件夹打包为 ZIP / 7Z）
+## 功能特性
 
-## 1. 安装与启动
+- 图片压缩：支持多图上传，按质量/尺寸进行压缩后下载
+- 压缩包解压：支持 `ZIP / RAR / 7z`，可按需勾选文件导出
+- 压缩包打包：支持文件/文件夹打包为 `ZIP / 7Z`
+- 本地优先：可在浏览器开发模式运行，也可打包为 Windows 桌面版
 
-### 安装依赖
+## 技术栈
+
+- 前端框架：`Next.js 14` + `React 18` + `TypeScript`
+- 桌面封装：`Electron`
+- UI：`Tailwind CSS` + `Radix UI`
+- 测试：`Vitest` + `Playwright`
+
+## 快速开始
+
+### 1) 安装依赖
 
 ```bash
 npm ci
 ```
 
-### 启动开发环境
+### 2) 启动开发环境
+
+默认端口 `3000`：
 
 ```bash
 npm run dev
 ```
 
-打开浏览器访问：
-
-- `http://localhost:3000`
-
-如果想用 3001 端口：
+自定义到 `3001`：
 
 ```bash
-npm run dev -- -p 3001
+npm run dev:3001
 ```
 
-## 2. 功能使用
+访问地址：
+
+- `http://localhost:3000`
+- 或 `http://localhost:3001`
+
+## 功能入口与使用
 
 ### 图片压缩
 
-入口：`/tools/image-compressor`
+- 入口：`/tools/image-compressor`
+- 步骤：上传图片 -> 调整参数 -> 执行压缩 -> 下载结果
 
-使用步骤：
+### 压缩包解压
 
-1. 上传一张或多张图片
-2. 设置体积、质量、分辨率参数
-3. 点击压缩并下载结果
+- 入口：`/tools/archive-extractor`
+- 支持：`ZIP / RAR / 7z`（含密码包）
+- 步骤：上传压缩包 -> 输入密码（如有）-> 勾选需要文件 -> 导出 ZIP
 
----
+### 压缩包打包
 
-### 在线解压
+- 入口：`/tools/archive-compressor`
+- 步骤：选择文件/文件夹 -> 选择格式（ZIP/7Z）-> 设置输出名 -> 开始打包
 
-入口：`/tools/archive-extractor`
+## 打包为 Windows 桌面版
 
-使用步骤：
-
-1. 上传压缩包（ZIP / RAR / 7z）
-2. 如有密码，在输入框填写密码
-3. 查看目录、预览文件、勾选需要的文件
-4. 点击导出勾选项下载 ZIP
-
----
-
-### 在线压缩包
-
-入口：`/tools/archive-compressor`
-
-使用步骤：
-
-1. 选择文件或选择文件夹
-2. 选择输出格式（ZIP 或 7Z）
-3. 输入输出文件名
-4. 点击开始压缩并下载
-
-## 3. 打包 Windows 免安装版（.exe）
-
-执行：
+执行以下命令生成免安装目录版：
 
 ```bash
 npm run dist:win-unpacked
 ```
 
-输出目录：
+产物目录：
 
 - `dist-electron/FileToolbox-win32-x64`
 
-运行文件：
+启动文件：
 
 - `dist-electron/FileToolbox-win32-x64/FileToolbox.exe`
 
-## 4. 常用命令
+## 常用命令
 
 ```bash
+# 开发
+npm run dev
+npm run dev:3001
+
+# 构建与启动
+npm run build
+npm run start
+npm run start:3001
+
+# 代码质量与测试
 npm run lint
 npm run test
-npm run build
-npm start
+npm run test:e2e
 ```
+
+## 项目结构（简要）
+
+```text
+app/                # 路由与页面
+components/         # 业务组件与通用 UI 组件
+lib/                # 工具函数与核心处理逻辑
+electron/           # Electron 主进程与打包准备脚本
+tests/              # 单测与 E2E 测试
+```
+
+## 开源许可
+
+本项目采用 `Apache-2.0` 许可证，详见 `LICENSE`。
 
