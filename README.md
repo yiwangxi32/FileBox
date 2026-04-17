@@ -1,3 +1,17 @@
+<div align="center">
+
+# FileBox
+
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-black.svg?logo=github)](https://github.com/yiwangxi32/FileBox)
+[![Stars](https://img.shields.io/github/stars/yiwangxi32/FileBox?style=flat&logo=github&color=yellow&label=Stars)](https://github.com/yiwangxi32/FileBox/stargazers)
+[![Forks](https://img.shields.io/github/forks/yiwangxi32/FileBox?style=flat&logo=github&color=purple&label=Forks)](https://github.com/yiwangxi32/FileBox/network)
+[![Last Commit](https://img.shields.io/github/last-commit/yiwangxi32/FileBox)](https://github.com/yiwangxi32/FileBox/commits)
+[![License](https://img.shields.io/github/license/yiwangxi32/FileBox)](LICENSE)
+[![Language](https://img.shields.io/badge/language-TypeScript-blue?logo=typescript)](https://github.com/yiwangxi32/FileBox)
+[![Issues](https://img.shields.io/github/issues/yiwangxi32/FileBox)](https://github.com/yiwangxi32/FileBox/issues)
+
+</div>
+
 # 多功能文件工具箱（FileBox）
 
 一个基于 Next.js + Electron 的本地文件处理工具箱，聚焦常用高频场景：图片压缩、压缩包解压与打包。
