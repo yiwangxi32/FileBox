@@ -105,6 +105,16 @@ electron/           # Electron 主进程与打包准备脚本
 tests/              # 单测与 E2E 测试
 ```
 
+## Star History
+
+<a href="https://www.star-history.com/?type=date&repos=yiwangxi32%2FFileBox">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=yiwangxi32/FileBox&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=yiwangxi32/FileBox&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=yiwangxi32/FileBox&type=date&legend=top-left" />
+ </picture>
+</a>
+
 ## 开源许可
 
 本项目采用 `Apache-2.0` 许可证，详见 `LICENSE`。
