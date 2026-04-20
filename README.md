@@ -7,6 +7,7 @@
 [![License](https://img.shields.io/github/license/yiwangxi32/FileBox)](LICENSE)
 [![Language](https://img.shields.io/badge/language-TypeScript-blue?logo=typescript)](https://github.com/yiwangxi32/FileBox)
 [![Issues](https://img.shields.io/github/issues/yiwangxi32/FileBox)](https://github.com/yiwangxi32/FileBox/issues)
+
 <a href="https://trendshift.io/repositories/1211350826" target="_blank">
   <img src="https://img.shields.io/badge/Trendshift-分析链接-blue?logo=trendmicro&logoColor=white" alt="yiwangxi32/FileBox | Trendshift" width="150"/>
 </a>
