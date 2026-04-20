@@ -11,9 +11,8 @@
 [![Issues](https://img.shields.io/github/issues/yiwangxi32/FileBox)](https://github.com/yiwangxi32/FileBox/issues)
 
 <a href="https://trendshift.io/repositories/1211350826" target="_blank">
-  <img src="https://trendshift.io/api/badge/repositories/1211350826" alt="yiwangxi32/FileBox | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/>
+  <img src="https://img.shields.io/badge/Trendshift-分析链接-blue?logo=trendmicro&logoColor=white" alt="yiwangxi32/FileBox | Trendshift" width="150"/>
 </a>
-</div>
 
 # 多功能文件工具箱（FileBox）
 
